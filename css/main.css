@@ -77,11 +77,9 @@ img {
   margin: -1px;
 }
 
-@media screen and (min-width: 480px) {
-  .logo__img {
-    width: 48px;
-    height: 48px;
-  }
+.logo__img {
+  width: 48px;
+  height: 48px;
 }
 @media screen and (min-width: 768px) {
   .logo__img {
@@ -193,10 +191,8 @@ img {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 480px) {
-  .nav__list {
-    display: none;
-  }
+.nav__list {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .nav__list {
@@ -211,10 +207,8 @@ img {
   outline: 1px solid green;
 }
 
-@media screen and (min-width: 480px) {
-  .header-contacts {
-    display: none;
-  }
+.header-contacts {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header-contacts {

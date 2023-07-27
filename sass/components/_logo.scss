@@ -1,9 +1,7 @@
 .logo {
   &__img {
-    @media screen and (min-width: $mobile) {
-      width: 48px;
-      height: 48px;
-    }
+    width: 48px;
+    height: 48px;
 
     @media screen and (min-width: $table) {
       width: 56px;

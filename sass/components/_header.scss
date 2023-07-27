@@ -34,9 +34,7 @@
     justify-content: space-between;
   }
   &__list {
-    @media screen and (min-width: $mobile) {
-      display: none;
-    }
+    display: none;
     @media screen and (min-width: $table) {
       display: flex;
       gap: 16px;
@@ -49,9 +47,8 @@
 }
 
 .header-contacts {
-  @media screen and (min-width: $mobile) {
-    display: none;
-  }
+  display: none;
+
   @media screen and (min-width: $table) {
     display: flex;
     flex-direction: column;
