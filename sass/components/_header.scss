@@ -1,0 +1,67 @@
+.header {
+  outline: 1px solid red;
+
+  @media screen and (min-width: $mobile) {
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $table) {
+    padding: 24px 0;
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 36px 0;
+    margin-bottom: 48px;
+  }
+
+  &__box {
+    @media screen and (min-width: $table) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  font-weight: 700;
+  @media screen and (min-width: $mobile) {
+    justify-content: space-between;
+  }
+  &__list {
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
+    @media screen and (min-width: $table) {
+      display: flex;
+      gap: 16px;
+    }
+  }
+  &__link {
+    padding: 8px 16px;
+    outline: 1px solid green;
+  }
+}
+
+.header-contacts {
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $table) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 16px;
+  }
+  &__link {
+    color: orange;
+  }
+}
