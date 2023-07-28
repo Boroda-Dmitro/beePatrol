@@ -44,6 +44,17 @@ img {
   }
 }
 
+.section {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 48px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.css"
+    integrity="sha512-q+OxwGn5fQc6oIdj3NQgTVMgS9TCLksZp5DsdSEsZbGamjdN7yVAMah+R1DmHZykkHD5gI8imeuEfmkp7ZHZ3w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css" />
   <title>BeePatrol.org</title>
 </head>
@@ -20,7 +23,7 @@
           </a>
           <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu"></use>
+              <use href="./img/icons.svg#icon-menu"></use>
             </svg>
           </button>
           <ul class="list nav__list">
@@ -33,7 +36,7 @@
           <li class="header-contacts__item">
             <a href="mailto:windlovers.vk@gmail.com" class=" link header-contacts__link">
               <svg class="header-contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
+                <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               windlovers.vk@gmail.com
             </a>
@@ -41,7 +44,7 @@
           <li class="header-contacts__item">
             <a href="tel:+380961111111" class=" link header-contacts__link">
               <svg class="header-contacts__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
+                <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -54,7 +57,7 @@
   </header>
   <main>
 
-    <section class="info">
+    <section class="info section">
       <div class="container">
         <h2 class="title">What we are doing?</h2>
         <p class="text">
@@ -67,9 +70,9 @@
       </div>
 
     </section>
-    <section class="benefits">
+    <section class="benefits section">
       <div class="container">
-        <h2 class="title">Why you need us</h2>
+        <h2 class="title">Why you need us?</h2>
         <ul class="benefits__list">
           <li class="benefits__item">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eveniet.
@@ -87,13 +90,16 @@
       </div>
 
     </section>
-    <section class="gallery">
+    <section class="gallery__box section">
+      <div class="container">
+        <h2 class="title">Our works</h2>
+        <ul class="gallery"></ul>
+      </div>
+    </section>
+    <section class="contacts section">
       <div class="container"></div>
     </section>
-    <section class="contacts">
-      <div class="container"></div>
-    </section>
-    <section class="form">
+    <section class="form section">
       <div class="container">
         <form class="contact-form">
           <label for="name" class="form-label">Name *</label>
@@ -119,7 +125,7 @@
     <div class="menu__container">
       <button class="menu__toggle js-close-menu">
         <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-close-menu"></use>
+          <use href="./img/icons.svg#icon-close-menu"></use>
         </svg>
       </button>
 
@@ -144,7 +150,14 @@
       </ul>
     </div>
   </div>
+  <div id="bee" class="bee">🐝</div>
   <script defer src="js/mobile-menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"
+    integrity="sha512-QoopN2y0b53eP+J2BNc1ff4ImedQAt2xDdhLQkUzTCyfniKkUlHbhweoYxDhCY78Z5EnMtY5rLtjtTK0Yc9Jcw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/gallery.js" type="module"></script>
+  <script src="js/bee.js" type="module"></script>
+
 </body>
 
 </html>

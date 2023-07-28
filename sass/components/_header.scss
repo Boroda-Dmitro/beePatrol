@@ -1,10 +1,8 @@
 .header {
   outline: 1px solid red;
 
-  @media screen and (min-width: $mobile) {
-    padding: 16px 0;
-    margin-bottom: 24px;
-  }
+  padding: 16px 0;
+  margin-bottom: 24px;
 
   @media screen and (min-width: $table) {
     padding: 24px 0;
@@ -30,9 +28,9 @@
   gap: 48px;
   align-items: center;
   font-weight: 700;
-  @media screen and (min-width: $mobile) {
-    justify-content: space-between;
-  }
+
+  justify-content: space-between;
+
   &__list {
     display: none;
     @media screen and (min-width: $table) {
@@ -56,9 +54,16 @@
   }
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: row;
     gap: 16px;
   }
   &__link {
     color: orange;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__icon {
+    fill: orange;
   }
 }

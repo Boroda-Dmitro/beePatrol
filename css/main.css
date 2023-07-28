@@ -63,6 +63,20 @@ img {
   }
 }
 
+.section {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    margin-bottom: 48px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -141,12 +155,8 @@ img {
 
 .header {
   outline: 1px solid red;
-}
-@media screen and (min-width: 480px) {
-  .header {
-    padding: 16px 0;
-    margin-bottom: 24px;
-  }
+  padding: 16px 0;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -183,13 +193,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
-}
-@media screen and (min-width: 480px) {
-  .nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav__list {
   display: none;
@@ -227,17 +233,28 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 16px;
   }
 }
 .header-contacts__link {
   color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.header-contacts__icon {
+  fill: orange;
 }
 
 .menu__toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +266,7 @@ img {
           justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: inherit;
   cursor: pointer;
   border: none;
   outline: none;
@@ -280,6 +297,10 @@ img {
   background-color: #fff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
 }
 @media (min-width: 768px) {
   .menu {
@@ -372,4 +393,63 @@ img {
 .menu-social__link--last {
   padding-right: 0;
   border: none;
+}
+
+.gallery {
+  display: grid;
+  max-width: 1140px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 240px;
+  grid-gap: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery__item {
+  position: relative;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.gallery__image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.gallery__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform var(--animation-duration) var(--timing-function);
+  transition: -webkit-transform var(--animation-duration) var(--timing-function);
+  transition: transform var(--animation-duration) var(--timing-function);
+  transition: transform var(--animation-duration) var(--timing-function), -webkit-transform var(--animation-duration) var(--timing-function);
+}
+
+.gallery__link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.gallery__link:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+#bee {
+  position: absolute;
+  top: 50%; /* Початкова вертикальна позиція (можете змінити на інше значення) */
+  left: 50%; /* Початкова горизонтальна позиція (можете змінити на інше значення) */
+  font-size: 36px;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); /* Зберігаємо центрування */
 }/*# sourceMappingURL=main.css.map */
