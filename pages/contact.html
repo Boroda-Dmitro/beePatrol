@@ -14,7 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <title>BeePatrol.org</title>
   </head>
 
@@ -23,8 +23,8 @@
       <div class="container">
         <div class="header__box">
           <nav class="nav">
-            <a href="index.html" class="logo">
-              <img src="./img/beePatrol.png" alt="logo" class="logo__img" />
+            <a href="../index.html" class="logo">
+              <img src="../img/beePatrol.png" alt="logo" class="logo__img" />
             </a>
             <button
               class="menu__toggle js-open-menu"
@@ -32,68 +32,46 @@
               aria-controls="mobile-menu"
             >
               <svg width="40" height="40">
-                <use href="./img/icons.svg#icon-menu"></use>
+                <use href="../img/icons.svg#icon-menu"></use>
               </svg>
             </button>
             <ul class="list nav__list">
+              <li class="nav__item"><a href="../index.html" class="link nav__link">Home</a></li>
               <li class="nav__item">
-                <a href="index.html" class="link nav__link nav__link--active">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="./pages/about.html" class="link nav__link">About Us</a>
+                <a href="about.html" class="link nav__link link nav__link--active">About Us</a>
               </li>
               <li class="nav__item"><a href="" class="link nav__link">Programs</a></li>
-
-              <li class="nav__item">
-                <a href="./pages/donate.html" class="link nav__link">Donate</a>
-              </li>
-              <li class="nav__item">
-                <a href="./pages/contact.html" class="link nav__link">Contact</a>
-              </li>
+              <li class="nav__item"><a href="./donate.html" class="link nav__link">Donate</a></li>
+              <li class="nav__item"><a href="./contact.html" class="link nav__link">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero section">
+      <section class="form section">
         <div class="container">
-          <div class="hero__wraper">
-            <h3 class="hero__subtitle">Serving Our Feline Ohana ( Family )</h3>
-            <h1 class="hero__title">Maui Bee Rescue</h1>
-            <a href="./pages/about.html" class="primary__button">Learn More</a>
-          </div>
-        </div>
-      </section>
-      <section class="info section">
-        <div class="container">
-          <h2 class="title">Our Mission</h2>
-          <p class="text">
-            Maui Bee Rescue's mission is committed to promoting the growth and well-being of bee
-            populations on Maui while actively encouraging their proliferation. Our organization
-            fosters bees, ensuring they receive the highest level of care, and offers opportunities
-            to distribute honey among the island's residents. We also host and provide educational
-            programs and activities for the public to raise awareness about the importance of bees
-            in our ecosystem.
-          </p>
-        </div>
-      </section>
-      <section class="help-us section">
-        <div class="container">
-          <h2 class="title">Help Us To Make Our Mission Successful.</h2>
-          <a href="./pages/donate.html" class="primary__button">Donate Now</a>
-        </div>
-      </section>
-      <section class="gallery__box section">
-        <div class="container">
-          <h2 class="title">Our works</h2>
-          <ul class="gallery"></ul>
+          <form class="contact-form">
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" required />
+
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required />
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" />
+
+            <label for="message" class="form-label">Message *</label>
+            <textarea id="message" name="message" class="form-textarea" required></textarea>
+
+            <button type="submit" class="form-button">Send</button>
+          </form>
         </div>
       </section>
       <section class="help section">
         <div class="container">
           <h2 class="title">Help Us To Make Our Mission Successful.</h2>
-          <a href="./pages/donate.html" class="primary__button">Donate Now</a>
+          <a href="./donate.html" class="primary__button">Donate Now</a>
           <ul class="social">
             <li class="social__item"><a href="" class="social__link">Facbook</a></li>
             <li class="social__item"><a href="" class="social__link">Twiter</a></li>
@@ -111,25 +89,20 @@
       <div class="menu__container">
         <button class="menu__toggle js-close-menu">
           <svg width="40" height="40">
-            <use href="./img/icons.svg#icon-close-menu"></use>
+            <use href="../img/icons.svg#icon-close-menu"></use>
           </svg>
         </button>
 
         <ul class="list menu__mobile">
           <li class="menu__item">
-            <a href="index.html" class="link menu__link">Home</a>
+            <a href="../index.html" class="link menu__link">Home</a>
           </li>
           <li class="menu__item">
-            <a href="./pages/about.html" class="link menu__link">About Us</a>
+            <a href="./about.html" class="link menu__link">About Us</a>
           </li>
           <li class="menu__item"><a href="#" class="link menu__link">Programs</a></li>
-
-          <li class="menu__item">
-            <a href="./pages/donate.html" class="link menu__link">Donate</a>
-          </li>
-          <li class="menu__item">
-            <a href="./pages/contact.html" class="link menu__link">Contact</a>
-          </li>
+          <li class="menu__item"><a href="./donate.html" class="link menu__link">Donate</a></li>
+          <li class="menu__item"><a href="./contact.html" class="link menu__link">Contact</a></li>
         </ul>
 
         <ul class="list menu-contaсts">
@@ -150,14 +123,7 @@
       </div>
     </div>
     <!-- <div id="bee" class="bee">🐝</div> -->
-    <script defer src="js/mobile-menu.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"
-      integrity="sha512-QoopN2y0b53eP+J2BNc1ff4ImedQAt2xDdhLQkUzTCyfniKkUlHbhweoYxDhCY78Z5EnMtY5rLtjtTK0Yc9Jcw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="js/gallery.js" type="module"></script>
+    <script defer src="../js/mobile-menu.js"></script>
     <!-- <script src="js/bee.js" type="module"></script> -->
   </body>
 </html>

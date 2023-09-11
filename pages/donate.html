@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.css"
+      integrity="sha512-q+OxwGn5fQc6oIdj3NQgTVMgS9TCLksZp5DsdSEsZbGamjdN7yVAMah+R1DmHZykkHD5gI8imeuEfmkp7ZHZ3w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>BeePatrol.org</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <nav class="nav">
+            <a href="../index.html" class="logo">
+              <img src="../img/beePatrol.png" alt="logo" class="logo__img" />
+            </a>
+            <button
+              class="menu__toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="40" height="40">
+                <use href="../img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="list nav__list">
+              <li class="nav__item"><a href="../index.html" class="link nav__link">Home</a></li>
+              <li class="nav__item">
+                <a href="about.html" class="link nav__link link nav__link--active">About Us</a>
+              </li>
+              <li class="nav__item"><a href="" class="link nav__link">Programs</a></li>
+              <li class="nav__item"><a href="./donate.html" class="link nav__link">Donate</a></li>
+              <li class="nav__item"><a href="./contact.html" class="link nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <div class="hero__wraper">
+            <h1 class="hero__title">About Us</h1>
+          </div>
+        </div>
+      </section>
+      <section class="donate section">
+        <div class="container">
+          <div class="donate__wraper">
+            <h2 class="title">Donation Information</h2>
+            <h3 class="title donate__title">I would like to make a donation in the amount of:</h3>
+            <form class="form">
+              <label class="form__radio-label">
+                <input type="radio" id="radio-1000" name="value" value="1000" />
+                1000
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-500" name="value" value="500" />
+                500
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-100" name="value" value="100" />
+                100
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-50" name="value" value="50" />
+                50
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-10" name="value" value="10" />
+                10
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-1" name="value" value="1" />
+                1
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-1" name="value" value="Other" />
+                Other
+              </label>
+              <label class="form__radio-label">
+                <input type="radio" id="radio-1" name="value" value="1" />
+                1
+              </label>
+              <button class="form__submit-button">Donate</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer__title">Copyright 2023 - Maui Cat Rescue - All Rights Reserved</h3>
+      </div>
+    </footer>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <div class="menu__container">
+        <button class="menu__toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="../img/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="list menu__mobile">
+          <li class="menu__item">
+            <a href="../index.html" class="link menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="./about.html" class="link menu__link">About Us</a>
+          </li>
+          <li class="menu__item"><a href="#" class="link menu__link">Programs</a></li>
+          <li class="menu__item"><a href="./donate.html" class="link menu__link">Donate</a></li>
+          <li class="menu__item"><a href="./contact.html" class="link menu__link">Contact</a></li>
+        </ul>
+
+        <ul class="list menu-contaсts">
+          <li class="menu-contaсts__item">
+            <a href="tel:+380961111111" class="link menu-contaсts__link menu-contaсts__link--color">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-contaсts__item">
+            <a
+              href="mailto:windlovers.vk@gmail.com"
+              class="link menu-contaсts__link menu-contaсts__link--size"
+            >
+              windlovers.vk@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div id="bee" class="bee">🐝</div> -->
+    <script defer src="../js/mobile-menu.js"></script>
+    <!-- <script src="js/bee.js" type="module"></script> -->
+  </body>
+</html>
